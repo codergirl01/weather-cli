@@ -8,9 +8,9 @@ function getCoordinates(city) {
     request(url , function (error, response, body) {
         const data = JSON.parse(body)
         const [lon, lat] = data.features[0].geometry.coordinates
-        console.error('error:', error); // Print the error if one occurred
-        console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
-        // console.log('body:', JSON.parse(body).features[0].geometry.coordinates); // Print the HTML for the Google homepage.
+        // console.error('error:', error); // Print the error if one occurred
+        // console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
+        // // console.log('body:', JSON.parse(body).features[0].geometry.coordinates); // Print the HTML for the Google homepage.
         const placeName = data.place_name
         getWeather(lat, lon)
     });
@@ -18,10 +18,16 @@ function getCoordinates(city) {
 function getWeather(lat, lon) {
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${process.env.weatherAPIkey}`
     request(url , function (error, response, body) {
-        console.error('error:', error); // Print the error if one occurred
-        console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
-        console.log('body:', JSON.parse(body)); // Print the HTML for the Google homepage.
-        
+        // console.error('error:', error); // Print the error if one occurred
+        // console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
+        let output = JSON.parse(body)
+        console.log('body', output); // Print the HTML for the Google homepage.
+        // console.log(JSON.parse(body.name))
+        // console.log(body.sys.country)
+        console.log(`Current temperature in ${output.name}, ${output.sys.country} is ${output.main.temp}F
+        Conditions are currently: ${output.weather[0].main}.
+        What you should expect: ${output.weather[0].description}
+        ` )
     });
 }
 function init() {
