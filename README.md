@@ -9,7 +9,8 @@ git clone https://github.com/codergirl01/weather-cli.git
 ```
 
 **2. Run `npm install`**
-This command installs all the packages this project needs. Alternatively, packages can be installed individually:
+
+This command installs all the packages used in this project. Alternatively, packages can be installed individually:
 
 **dotenv**
 ```javaScript
@@ -23,7 +24,7 @@ npm i request
 ```
 **3. Run javascript file**
 
-This package takes in a city, village, or municipalityin as an argument.
+This package takes in a city, village, or municipality as an argument.
 
 *Example*
 ```
