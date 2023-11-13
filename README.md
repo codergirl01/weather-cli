@@ -9,7 +9,7 @@ git clone https://github.com/codergirl01/weather-cli.git
 ```
 
 **2. Run `npm install`**
-This command installs all the packages this project needs. If this install process fails, alternatively:
+This command installs all the packages this project needs. Alternatively, packages can be installed individually:
 
 **dotenv**
 ```javaScript
