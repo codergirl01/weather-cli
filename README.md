@@ -1,4 +1,4 @@
-# weather-cli
+# Weather CLI
 
 ### How to run on localhost:
 
