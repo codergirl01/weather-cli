@@ -1,5 +1,7 @@
 # Weather CLI
 
+The purpose of this project is intended for those who would like a quick lookup on weather conditions in any given city, village or municipality. 
+
 ### How to run on localhost:
 
 **1. Clone the project to local**
