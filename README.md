@@ -1,6 +1,6 @@
 # weather-cli
 
-### How it run on localhost:
+### How to run on localhost:
 
 **1. Clone the project to local**
 
