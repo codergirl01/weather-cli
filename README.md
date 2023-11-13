@@ -24,12 +24,14 @@ npm i request
 **3. Run javascript file**
 
 This package takes in a city, village, or municipalityin as an argument.
-Example
+
+*Example*
 ```
 node app.js vancouver
 ```
 This will return a summary of the weather for the region defined in the argument through the command line.
-Example
+
+*Example*
 ```
 Current temperature in Vancouver, CA is 139.39C / 282.91F
 Conditions are currently: Clouds.
