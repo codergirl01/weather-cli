@@ -23,7 +23,7 @@ function getWeather(lat, lon) {
     request(url, function (error, response, body) {
         try {
             let output = JSON.parse(body)
-            console.log(`Current temperature in ${output.name}, ${output.sys.country} is ${convertToCelsius(output.main.temp)}C / ${output.main.temp}F\nConditions are currently: ${output.weather[0].main}.\nWhat you should expect: ${uppercase(output.weather[0].description)}
+            console.log(`Current temperature in ${output.name}, ${output.sys.country} is ${convertToCelsius(output.main.temp)}C / ${output.main.temp}F\nConditions are currently: ${output.weather[0].main}.\nWhat you should expect: ${uppercase(output.weather[0].description)}.
             ` )
         } catch (error) {
             console.error('error:', error);
