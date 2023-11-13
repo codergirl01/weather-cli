@@ -15,7 +15,7 @@ This command installs all the packages this project needs. If this install proce
 ```javaScript
 npm i dotenv
 ```
-API keys are stored in the ```.env``` file and uses ```process.env``` to access these API keys. Please see documentation on this: https://nodejs.org/dist/latest-v8.x/docs/api/process.html#process_process_env. API keys used in this project will need to be registered and obtained through [OpenWeather API](https://openweathermap.org/api) and [geocoding section of the Mapbox api](https://docs.mapbox.com/api/search/#forward-geocoding).
+API keys are stored in the ```.env``` file and uses ```process.env``` to access these API keys. Please see documentation on this: [Documentation](https://nodejs.org/dist/latest-v8.x/docs/api/process.html#process_process_env). API keys used in this project will need to be registered and obtained through [OpenWeather API](https://openweathermap.org/api) and [geocoding section of the Mapbox api](https://docs.mapbox.com/api/search/#forward-geocoding).
 
 **request**
 ```javaScript
